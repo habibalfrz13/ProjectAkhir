@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="150dp">
+
+
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:text="Register"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <EditText
+                            android:id="@+id/nama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="16dp"
+                            android:ems="16"
+                            android:inputType="text"
+                            android:hint="Nama Lengkap"
+                            app:layout_constraintEnd_toEndOf="@+id/textView12"
+                            app:layout_constraintStart_toStartOf="@+id/textView12"
+                            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                        <EditText
+                            android:id="@+id/username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="16dp"
+                            android:ems="16"
+                            android:inputType="text"
+                            android:hint="Username"
+                            app:layout_constraintEnd_toEndOf="@+id/nama"
+                            app:layout_constraintStart_toStartOf="@+id/nama"
+                            app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="16dp"
+                            android:ems="16"
+                            android:textStyle="italic"
+                            android:inputType="textEmailAddress"
+                            android:hint="alamat@email"
+                            app:layout_constraintEnd_toEndOf="@+id/username"
+                            app:layout_constraintStart_toStartOf="@+id/username"
+                            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+                        <EditText
+                            android:id="@+id/no_hp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="16dp"
+                            android:ems="16"
+                            android:textStyle="italic"
+                            android:inputType="number"
+                            android:hint="Nomor HP"
+                            app:layout_constraintEnd_toEndOf="@+id/email"
+                            app:layout_constraintStart_toStartOf="@+id/email"
+                            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="16dp"
+                            android:ems="16"
+                            android:textStyle="italic"
+                            android:inputType="textPassword"
+                            android:hint="Password"
+                            app:layout_constraintEnd_toEndOf="@+id/no_hp"
+                            app:layout_constraintStart_toStartOf="@+id/no_hp"
+                            app:layout_constraintTop_toBottomOf="@+id/no_hp" />
+
+                        <Button
+                            android:id="@+id/buttonRegister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Register"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="@+id/password"
+                            app:layout_constraintStart_toStartOf="@+id/password"
+                            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+                        <TextView
+                            android:id="@+id/buttonLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="32dp"
+                            android:text="Sudah Punya Akun ? Login Disini"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/buttonRegister"
+                            app:layout_constraintStart_toStartOf="@+id/buttonRegister"
+                            app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
